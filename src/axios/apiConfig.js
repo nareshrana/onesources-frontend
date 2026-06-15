@@ -1,0 +1,50 @@
+const NEW_VERSION = "/api/";
+const informedLink = "https://infobackend.docintelhub.com";
+// const informedLink = 'http://192.168.0.162:3001'
+
+export const ENDPOINT = {
+  FEEDBACK: "feedback",
+  POSTS: `/posts`,
+  UPCOMINGEVENT: `/up-coming-event`,
+  LOGIN: `${NEW_VERSION}login`,
+  EXPERTS: `/videos`,
+  EVENTS: `/events`,
+  QUESTION: `/get-questions`,
+  SUBMITQUESTION: `${NEW_VERSION}store-selected-options`,
+  VIDEORATING: `${NEW_VERSION}video/rating`,
+  CONTACTUS: `${NEW_VERSION}contact-us`,
+  REGISTER: `${NEW_VERSION}register`,
+  NEWLOGIN: `${NEW_VERSION}one-click-login`,
+  CHECKPASSLINK: `${NEW_VERSION}check-password-link`,
+  SETPASSWORD: `${NEW_VERSION}set-password`,
+  DELETECONSENT: `${NEW_VERSION}delete-consent`,
+  TRACKING: `${NEW_VERSION}tracking`,
+  UPDATETRACKING: `${NEW_VERSION}update-tracking`,
+  CHECK_LIVE: `/check-live-event`,
+  STORELOGINDATA: `${NEW_VERSION}store-login-data`,
+  VIDEOTRACKING: `${NEW_VERSION}video-tracking`,
+  UPDATE_VIDEO_TRACKING: `${NEW_VERSION}update-video-tracking`,
+  VISITOR: `${NEW_VERSION}visiters`,
+  SYMPOSIUM_HIGHLIGHTS: `/get-symposium-highlights`,
+
+  STORE_FIREBASE: `${NEW_VERSION}store-firebase-id`,
+
+  GETCHATLINKDATA: informedLink + "/auth/get-chat-link-data",
+  EVENT_ID: informedLink + `/auth/event-data`,
+  SESSION_LIST: informedLink + `/auth/session-listing`,
+  POLL_ANSWER: informedLink + `/auth/poll-answer`,
+  ADD_EVENT_DATA: informedLink + "/auth/add-event-data",
+  LOGOUT: `${NEW_VERSION}logout`,
+  LOGOUTFROMLIVE: `${NEW_VERSION}logout-from-live`,
+  EAHAD_TRACKING: `${NEW_VERSION}eahad-tracking`,
+  SYMPOSIUM_HIGHLIGHTS_TRACKING: `${NEW_VERSION}symposium-tracking`,
+  WFH_TRACKING: `${NEW_VERSION}wfh-tracking`,
+  STORE_TIMELINE_TRACKING: `${NEW_VERSION}store-timeline-tracking`,
+  // /track-user-activity
+  TRACKING_USER_ACTIVITY: `${NEW_VERSION}track-user-activity`,
+  TRACKING_USER_ACTIVITY_ISTH_2026: `${NEW_VERSION}track-user-activity-isth-2026`,
+  PREVIEW_VIDEO_TRACKING: `${NEW_VERSION}preview-video-tracking`,
+  QRCODE_LINK_VALIDATION: `${NEW_VERSION}check-share-link`,
+  QRCODE_SHARE_CONTENT: `${NEW_VERSION}share-article`,
+  REMOVE_LIBRARY_CONTENT: `/remove-library-content`,
+};

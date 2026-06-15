@@ -1,0 +1,16 @@
+<svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group 3788">
+<circle id="Ellipse 199" cx="58" cy="58" r="57.5" stroke="url(#paint0_linear_180_2534)"/>
+<path id="Ellipse 200" d="M94.8256 58.0002C94.8256 78.3383 78.3383 94.8256 58.0002 94.8256C37.6621 94.8256 21.1748 78.3383 21.1748 58.0002C21.1748 37.6621 37.6621 21.1748 58.0002 21.1748C78.3383 21.1748 94.8256 37.6621 94.8256 58.0002ZM36.0595 58.0002C36.0595 70.1177 45.8827 79.9409 58.0002 79.9409C70.1177 79.9409 79.9409 70.1177 79.9409 58.0002C79.9409 45.8827 70.1177 36.0595 58.0002 36.0595C45.8827 36.0595 36.0595 45.8827 36.0595 58.0002Z" fill="url(#paint1_linear_180_2534)"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_180_2534" x1="99.6489" y1="19.7382" x2="41.1053" y2="117.157" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F3942D"/>
+<stop offset="1" stop-color="#E94362"/>
+</linearGradient>
+<linearGradient id="paint1_linear_180_2534" x1="75.6393" y1="21.1748" x2="39.7923" y2="95.2988" gradientUnits="userSpaceOnUse">
+<stop stop-color="#F3942D"/>
+<stop offset="1" stop-color="#E94362"/>
+</linearGradient>
+</defs>
+</svg>

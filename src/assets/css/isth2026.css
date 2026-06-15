@@ -1,0 +1,1389 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+:root {
+  --primary-color: #222A37;
+  --secondary-color: #212938;
+  --ultra: #E2DF31;
+  --Wilate1: #F3942D;
+  --Critical-Care: #AC2977;
+  --text-color: #212938;
+  --text-white: #ffffff;
+  --ultra-dark: #c4c127;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+/* -------ISTH 2026 Coming soon page UI Start------- */
+.--isth2026 {
+  background: var(--primary-color);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
+  min-height: 100dvh;
+}
+
+.--isth2026 .isth-card {
+  position: relative;
+  width: 100%;
+  background: var(--secondary-color);
+  padding: 50px 40px;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 0 27.6px 0 rgba(0, 14, 36, 0.53);
+  backdrop-filter: blur(150px);
+}
+
+.--isth2026 .isth-main {
+  position: relative;
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+}
+
+
+.--isth2026 .isth-banner {
+  position: absolute;
+  left: -35px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 60%;
+  z-index: 1;
+}
+
+.--isth2026 .isth-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.--isth2026 .isth-content {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  z-index: 2;
+}
+
+.--isth2026 .isth-content h1 {
+  color: #FFF;
+  text-shadow: 0 0 3.9px #FFF;
+  font-family: "Poppins";
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: 2.24px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+
+.--isth2026 .isth-content h2 {
+  color: #FFF;
+  text-shadow: 0 0 3.9px #FFF;
+  font-family: "Poppins";
+  font-size: 40px;
+  font-weight: 300;
+  letter-spacing: 1.6px;
+  margin: 0;
+}
+
+.--isth2026 .isth-footer {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  mix-blend-mode: luminosity;
+}
+
+.--isth2026 .isth-footer img {
+  width: 100%;
+  height: auto;
+}
+
+.--isth2026 .isth-logo {
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+  z-index: 3;
+}
+
+.--isth2026 .isth-logo img {
+  max-width: 206px;
+  width: 100%;
+  height: auto;
+}
+
+/* 1650 */
+@media (max-width: 1650px) {
+  .--isth2026 .isth-content h1 {
+    font-size: 48px;
+  }
+
+}
+
+
+/* 1440 */
+@media (max-width: 1440px) {
+  .--isth2026 .isth-content h1 {
+    font-size: 48px;
+    line-height: 64px;
+    letter-spacing: 1.92px;
+  }
+
+  .--isth2026 .isth-content h2 {
+    font-size: 36px;
+  }
+
+  .--isth2026 .isth-banner {
+    width: 57%;
+  }
+
+  .--isth2026 .isth-content {
+    width: 43%;
+  }
+}
+
+/* 1280 */
+@media (max-width: 1280px) {
+  .--isth2026 .isth-card {
+    padding: 40px 30px;
+  }
+
+  .--isth2026 .isth-content h1 {
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 1.6px;
+  }
+
+  .--isth2026 .isth-content h2 {
+    font-size: 32px;
+  }
+
+  .--isth2026 .isth-banner {
+    width: 60%;
+  }
+
+  .--isth2026 .isth-content {
+    width: 40%;
+  }
+}
+
+/* 1199 */
+@media (max-width: 1199px) {
+  .--isth2026 .isth-content h1 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .--isth2026 .isth-content h2 {
+    font-size: 28px;
+  }
+
+  .--isth2026 .isth-banner {
+    width: 55%;
+  }
+
+  .--isth2026 .isth-content {
+    width: 45%;
+  }
+}
+
+/* TABLET */
+@media (max-width: 992px) {
+  .--isth2026 .isth-content h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .--isth2026 .isth-content h2 {
+    font-size: 18px;
+  }
+
+  .--isth2026 .isth-banner {
+    width: 60%;
+  }
+
+  .--isth2026 .isth-content {
+    width: 40%;
+  }
+
+}
+
+/* MOBILE */
+@media (max-width: 834px) {
+
+  .--isth2026 {
+    padding: 16px;
+  }
+
+  .--isth2026 .isth-card {
+    padding: 16px;
+  }
+
+  .--isth2026 .isth-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+  }
+
+  .--isth2026 .isth-banner {
+    position: relative;
+    left: 0;
+    top: -54px;
+    transform: none;
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .--isth2026 .isth-banner img {
+    transform: rotate(90deg);
+    width: 100%;
+  }
+
+  .--isth2026 .isth-content {
+    position: relative;
+    top: unset;
+    right: unset;
+    transform: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .--isth2026 .isth-content h1 {
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.96px;
+  }
+
+  .--isth2026 .isth-content h2 {
+    font-size: 26px;
+  }
+
+  .--isth2026 .isth-footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .--isth2026 .isth-footer img {
+    width: auto;
+    height: 150px;
+  }
+
+  .--isth2026 .isth-logo {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .--isth2026 .isth-logo img {
+    max-width: 100px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .--isth2026 .isth-content h1 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+
+  .--isth2026 .isth-content h2 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.64px;
+  }
+
+  .--isth2026 .isth-main {
+    gap: 40px;
+  }
+
+  .--isth2026 .isth-banner img {
+    transform: rotate(90deg);
+    width: 539px;
+  }
+
+  .--isth2026 .isth-footer img {
+    width: auto;
+    height: 93px;
+  }
+
+  .--isth2026 .isth-logo img {
+    max-width: 94px;
+  }
+}
+
+@media (max-width: 375px) {
+  .--isth2026 .isth-content h1 {
+    font-size: 20px;
+  }
+
+  .--isth2026 .isth-content h2 {
+    font-size: 16px;
+  }
+}
+
+/* -------ISTH 2026 Coming soon page UI End------- */
+
+/* -------ISTH 2026 Promotional page UI Start------- */
+.isth26 .isth-banner-section-inset {
+  border-radius: 8px;
+  background: #212838;
+  padding: 0;
+  box-shadow: 0 0 10px 0 rgba(0, 14, 36, 0.80);
+  overflow: hidden;
+}
+
+.isth26 .isth-bottom-outline {
+  padding-right: 0;
+}
+
+.isth26 .isth-banner-section-left {
+  padding: 93px 8px 24px 48px;
+}
+
+.isth26 .isth-banner-section-left h2 span,
+.isth26 .isth-banner-section-left h3 span {
+  color: var(--ultra);
+}
+
+.isth26 .isth26 .isth-banner-section-left h3.add-space {
+  margin-top: 24px;
+}
+
+.isth26 .agenda-video {
+  position: relative;
+  overflow: visible;
+}
+
+.isth26 .agenda-video .one_source_video {
+  position: relative;
+  right: 15px;
+}
+
+.isth26 .isth-event-list {
+  margin: 0 12px 100px;
+}
+
+.isth26 .isth-banner-section-right .one_source_video img {
+  /* width: 100%; */
+}
+
+.isth26 .isth-banner-section:after {
+  background: none;
+}
+
+.isth26 .paris-outline {
+  position: relative;
+  overflow: hidden;
+  margin-top: -28px;
+}
+
+.isth26 .paris-outline img,
+.isth26 .paris-outline img picture {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+/* .isth26 .paris-outline img {
+  height: auto;
+  max-width: 100%;
+  display: block; */
+/* margin-top: -24px; */
+/* margin-top: 10px; */
+/* } */
+
+.isth26 .octapharma-logo {
+  position: absolute;
+  right: 40px;
+  bottom: 60px;
+  z-index: 2;
+}
+
+.isth26 .octapharma-logo img {
+  width: 232px;
+  /* adjust if needed */
+  height: auto;
+  display: block;
+}
+
+.isth26 .isth-event-list .col {
+  max-width: 485px;
+  padding: 0;
+}
+
+.isth26 .event-card .card-header {
+  background: var(--ultra);
+}
+
+.isth26 .event-card-2 .event-card .card-header {
+  background: var(--Wilate1);
+}
+
+.isth26 .event-card-3 .event-card .card-header {
+  background: var(--Critical-Care);
+}
+
+.isth26 .event-card .card-header h6,
+.isth26 .event-card .card-header p {
+  color: var(--text-color);
+  font-family: 'Poppins', sans-serif;
+}
+
+.isth26 .event-card .card-header p.card-title {
+  color: var(--text-color);
+  font-family: "Roboto Slab";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+
+.isth26 .event-card .card-header p {
+  font-family: 'poppins', sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+}
+
+.isth26 .event-list-card button.close-btn {
+  color: var(--text-color);
+}
+
+.isth26 .event-list-card .card-body button,
+.isth26 .event-list-card button {
+  max-width: 357px;
+
+}
+
+.isth26 .event-list-card button.close-btn {
+  padding: 8px 55px;
+  background: var(--ultra);
+  border: none;
+}
+
+.isth26 .event-list-card.event-card-2 button.close-btn {
+  background: var(--Wilate1);
+}
+
+.isth26 .event-list-card.event-card-3 button.close-btn {
+  background: var(--Critical-Care);
+}
+
+.isth26 .oral-communication-card h6 {
+  color: var(--ultra);
+}
+
+.isth26 .oral-communication-box .speaker-img img {
+  width: 144px;
+}
+
+.isth26 .isth_promo_img {
+  padding: 40px 0px;
+  margin: 0 -32px;
+}
+
+/* .isth26 .event-details-view-inset {
+  background: rgba(49, 60, 79, 0.20);
+} */
+.isth26 .event-card .card-body {
+  backdrop-filter: none;
+}
+
+.isth26 .event-details-view::before {
+  left: 200px;
+  filter: drop-shadow(0px -6px 3px rgba(226, 223, 49, 0.8));
+}
+
+.isth26 #event-details-data-1 .event-details-view::before {
+  filter: drop-shadow(0px -6px 3px rgba(243, 148, 45, 0.80));
+}
+
+.isth26 #event-details-data-2 .event-details-view::before {
+  filter: drop-shadow(0px -6px 3px rgba(176, 32, 112, 0.80));
+}
+
+.isth26 .event-details-view-inset>h3 {
+  color: var(--ultra);
+}
+
+.isth26 .event-details-view-inset>p {
+  font-family: "Roboto Slab";
+  color: var(--ultra);
+  text-align: center;
+  font-size: 32px;
+  letter-spacing: 1.28px;
+  line-height: 1.2;
+}
+
+.isth26 .event-details-agenda-details h3 {
+  color: var(--ultra);
+}
+
+.isth26 .event-details-agenda {
+  backdrop-filter: blur(25px);
+}
+
+.isth26 .event-details-agenda-inset {
+  background: var(--secondary-color);
+  box-shadow: 0 0 10px 0 rgba(0, 14, 36, 0.80);
+}
+
+.isth26 .event-details-agenda-speakers .event-agenda-speaker {
+  max-width: 255px;
+}
+
+.isth26 .event-details-agenda-details:after {
+  background: url(/images/isth-dotted-line.svg) no-repeat;
+}
+
+.isth26 .event-details-agenda-speakers .event-agenda-speaker p.chair-person {
+  color: var(--ultra);
+}
+
+.isth26 .event-details-agenda-speakers .event-agenda-speaker img {
+  max-width: 124px;
+}
+
+.isth26 .event-details-view-inset .event-agenda-list {
+  background: var(--ultra);
+}
+
+.isth26 .event-details-view-inset .event-agenda-list>div p {
+  color: var(--text-color);
+}
+
+.isth26 .event-details-view-inset .event-agenda-list .agenda-btn a {
+  color: var(--text-color);
+  box-shadow: 0 0 16px 0 rgba(33, 41, 56, 0.20);
+}
+
+.isth26 .event-details-view-inset .event-agenda-list .agenda-btn {
+  border-left: 1px dashed var(--text-color);
+}
+
+.isth26 .event-details-view-inset .event-agenda-list .agenda-btn a:hover {
+  background: var(--ultra-dark);
+  color: var(--text-white);
+}
+
+.isth26 .event-list-card.event-card-1 .card-body button:hover {
+  background: var(--ultra);
+  border-color: var(--ultra-dark);
+}
+
+/* .isth26 .event-list-card .card-body button:hover{
+  background: var(--ultra-dark);
+  border: none;
+} */
+.isth26 .agenda-video-box .agenda-video-img .video-agenda-play {
+  left: auto;
+  right: 0;
+  top: 50%;
+}
+
+.isth26 .agenda-video-box .agenda-video-details .video-agenda-play img {
+  max-width: 68px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.isth26 .agenda-video-box .agenda-video-details {
+  position: relative;
+}
+
+.isth26 .agenda-video-details .video-agenda-play:before,
+.speaker-videos .speaker-videos-list .play-icon:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 6px solid rgba(255, 255, 255, .6);
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.65, 0, .34, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.isth26 .agenda-video-details .video-agenda-play:after,
+.speaker-videos .speaker-videos-list .play-icon:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 6px solid rgba(255, 255, 255, .6);
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: 3s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.65, 0, .34, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.isth26 .paris-outline-right {
+  position: relative;
+}
+
+.isth26 .paris-outline-right img {
+  height: auto;
+  width: 100%;
+  margin-top: -82px;
+  filter: contrast(1.0) saturate(1.1);
+}
+
+.isth26 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-title {
+  color: var(--ultra);
+}
+
+.isth26 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle {
+  color: var(--ultra);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.isth26 .agenda-video-box .agenda-video-details .symposium-agenda,
+.isth26 #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda,
+.isth26 #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda,
+.isth26 #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+  background: var(--secondary-color);
+}
+
+.isth26 .event-details-view-inset .agenda-video {
+  margin: 100px 0 40px;
+}
+
+.isth26 #event-details-data-1 .event-details-view::before {
+  left: 49%;
+}
+
+.isth26 #event-details-data-2 .event-details-view::before {
+  left: 87%;
+}
+
+.isth26 #event-details-data-1 .event-details-view-inset>p {
+  color: var(--Wilate1);
+}
+
+.isth26 #event-details-data-2 .event-details-view-inset>h3,
+.isth26 #event-details-data-2 .event-details-view-inset>p {
+  color: var(--Critical-Care);
+}
+
+.isth26 #event-details-data-2 .event-details-agenda-speakers {
+  padding: 0 0 0 40px;
+}
+
+.isth26 #event-details-data-1 .event-details-view-inset .event-agenda-list .agenda-btn a,
+.isth26 #event-details-data-2 .event-details-view-inset .event-agenda-list .agenda-btn a {
+  color: var(--text-color);
+}
+
+.isth26 #event-details-data-1 .event-details-view-inset .event-agenda-list .agenda-btn a:hover,
+.isth26 #event-details-data-2 .event-details-view-inset .event-agenda-list .agenda-btn a:hover {
+  color: var(--text-white);
+}
+
+.isth26 #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-title {
+  color: var(--Wilate1);
+}
+
+.isth26 #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle {
+  color: var(--Wilate1);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.isth26 #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-title {
+  color: var(--Critical-Care);
+}
+
+.isth26 #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle {
+  color: var(--Critical-Care);
+  font-size: 24px;
+  font-weight: 400;
+}
+
+.isth26 #event-details-data-2 .event-details-agenda-inset .event-details-agenda-speakers>div {
+  gap: 60px;
+  justify-content: unset !important;
+}
+
+.isth26 #event-details-data-1 .event-details-view-inset .agenda-video,
+.isth26 #event-details-data-2 .event-details-view-inset .agenda-video,
+.isth26 #event-details-data-3 .event-details-view-inset .agenda-video {
+  margin: 100px 0 40px;
+}
+
+.isth26 #event-details-data-1 .event-details-view .disclamer-text,
+.isth26 #event-details-data-2 .event-details-view .disclamer-text {
+  text-align: center;
+}
+
+.isth26 .oral-communication-box {
+  padding-right: 65px;
+}
+
+.isth26 .event-card-3 .event-card .card-body>div p span,
+.isth26 #event-details-data-2 .event-details-view-inset .event-agenda-list>div p span {
+  color: #94A7BE;
+}
+
+.isth26 .oral-communication,
+.isth26 .scientific-development {
+  backdrop-filter: none;
+}
+
+#event-details-data-0 .event-details-view {
+  box-shadow: 0px 0px 16px rgba(226, 223, 49, 0.8);
+}
+
+.live-stream-wrapper {
+  padding: 16px;
+  border-radius: 8px;
+  background: rgba(49, 60, 79, 0.20);
+  box-shadow: 0 0 10px 0 rgba(0, 14, 36, 0.49);
+  backdrop-filter: blur(25px);
+  margin-bottom: 48px;
+}
+
+.live-stream-banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #F3942D 0%, #E94362 100%);
+  box-shadow: 0 0 10px 0 rgba(0, 14, 36, 0.80);
+  padding: 16px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.live-stream-left {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.live-icon-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 42px;
+}
+
+.live-content h3 {
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.live-meta {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: "Poppins", sans-serif;
+  color: var(--text-color);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23px;
+  /* 115% */
+  letter-spacing: 0.8px;
+}
+
+.live-stream-right {
+  margin-left: 28px;
+  position: relative;
+  display: flex;
+  max-width: 262px;
+  width: 100%;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  cursor: pointer;
+  background: #FFF;
+  box-shadow: 0 0 16px 0 rgba(33, 41, 56, 0.20);
+}
+
+.live-stream-right a {
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.live-stream-right::before {
+  content: "";
+  position: absolute;
+  left: -40px;
+  top: -34px;
+  bottom: -34px;
+  border-left: 1px dashed rgba(255, 255, 255, 0.4);
+}
+
+.live-stream-right button {
+  background: #ffffff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-color);
+  line-height: 20px;
+  cursor: pointer;
+  width: 222px;
+}
+
+.isth26 #event-details-data-2 .event-details-agenda-speakers .event-agenda-speaker p.chair-person {
+  color: var(--Critical-Care);
+}
+
+
+@media only screen and (max-width: 1539px) {
+  .isth26 .isth-banner-section-left {
+    padding: 43px 8px 24px 48px;
+  }
+
+  .isth26 .isth-banner-section-right .one_source_video img {
+    width: 100%;
+  }
+
+  .isth26 .paris-outline img {
+    margin-top: 0px;
+  }
+
+  .isth26 .paris-outline img {
+    margin-top: -15px;
+  }
+
+  .isth26 .octapharma-logo {
+    bottom: 46px;
+  }
+
+  .isth26 .octapharma-logo img {
+    width: 151px;
+  }
+
+  .isth26 .isth-event-list .col {
+    max-width: 333px;
+    padding: 0;
+  }
+
+  .isth26 .event-details-agenda-details p,
+  .isth26 .event-details-agenda-speakers .event-agenda-speaker p {
+    font-size: 14px;
+  }
+
+  .isth26 .event-details-agenda-speakers {
+    padding: 0 10px 0 40px;
+  }
+
+  .isth26 .event-card .card-body .isth-event-btn {
+    margin: 30px -16px 0;
+  }
+
+  .isth26 #event-details-data-2 .event-details-agenda-speakers .event-agenda-speaker:last-child {
+    padding-right: 0;
+  }
+
+  .isth26 #event-details-data-2 .event-details-agenda-speakers .event-agenda-speaker {
+    max-width: 212px;
+  }
+
+  .isth26 #event-details-data-2 .event-details-agenda-speakers .event-agenda-speaker p.chair-person {
+    margin-top: 14px;
+  }
+
+  .isth26 #event-details-data-2 .event-details-agenda-inset .event-details-agenda-speakers>div {
+    gap: 0;
+    justify-content: space-between !important;
+  }
+
+  .isth26 .agenda-video-box .agenda-video-details .symposium-agenda,
+  .isth26 #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda,
+  .isth26 #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda,
+  .isth26 #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+    padding: 0 40px 0 95px;
+  }
+
+  .isth26 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle,
+  .isth26 #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle,
+  .isth26 #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle {
+    font-size: 18px;
+  }
+
+  .live-content h3 {
+    font-size: 24px;
+  }
+
+  .live-stream-banner {
+    padding: 12px 24px;
+  }
+
+  .meta-item {
+    font-size: 16px;
+  }
+
+  .meta-item img {
+    width: 24px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .isth26 .paris-outline {
+    margin-top: -27px;
+  }
+
+  .isth26 .isth-event-list {
+    margin: 0 12px 64px;
+  }
+
+  .isth26 .event-list-card .card-body button,
+  .isth26 .event-list-card button {
+    max-width: 287px;
+  }
+
+  .isth26 .event-list-card button.close-btn {
+    padding: 8px 16px;
+  }
+
+  .isth26 .agenda-video-box .agenda-video-img .video-agenda-play img {
+    max-width: 48px;
+  }
+
+  .isth26 .oral-communication-box {
+    padding-right: 18px;
+  }
+
+  .isth26 .oral-communication-box .speaker-img img {
+    width: 131px;
+  }
+
+  .isth26 .event-card .card-header p {
+    font-size: 15px;
+    letter-spacing: 0.6px;
+  }
+
+  .isth26 .event-card .card-body>div div {
+    padding-right: 16px;
+  }
+
+  .event-card .card-body>div p {
+    letter-spacing: 0.56px;
+    font-size: 14px;
+  }
+
+  .isth26 .event-details-view::before {
+    left: 123px;
+  }
+
+  /* .isth26 .paris-outline-right img {
+    margin-top: -99px;
+  } */
+
+  .isth26 .agenda-video-box .agenda-video-details .video-agenda-play img {
+    max-width: 48px;
+  }
+
+  .isth26 .event-details-agenda-speakers .event-agenda-speaker {
+    max-width: 230px;
+  }
+
+  .isth26 .event-details-agenda-speakers .event-agenda-speaker img {
+    max-width: 98px;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .isth26 .isth-event-list {
+    margin: 0 12px 64px;
+  }
+
+  .isth26 .paris-outline {
+    margin-top: 25px;
+  }
+
+  .isth26 .isth-banner-section-left {
+    padding: 39px 8px 24px 35px;
+  }
+
+  .isth26 .event-details-view-inset>h3,
+  .isth26 .event-details-view-inset>p {
+    font-size: 28px;
+  }
+
+  .isth26 .agenda-video-box .agenda-video-details .symposium-agenda h3,
+  .isth26 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-title {
+    font-size: 20px;
+  }
+
+  .isth26 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle,
+  .isth26 #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle,
+  .isth26 #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-subtitle {
+    font-size: 16px;
+  }
+
+  .isth26 .event-details-agenda-details p {
+    font-size: 13px;
+    font-weight: 400;
+  }
+
+  .isth26 .event-details-agenda-speakers .event-agenda-speaker img {
+    max-width: 89px;
+  }
+ .isth26 .event-details-agenda-speakers .event-agenda-speaker p {
+    font-size: 13px;
+    font-weight: 600;
+ }
+.isth26 .event-details-agenda-speakers .event-agenda-speaker p.chair-person{
+ font-weight: 400;
+}
+.isth26 .session-details .session-venue p{
+line-height: 23px; 
+letter-spacing: 0.52px;
+}
+
+  .live-content h3 {
+    font-size: 20px;
+  }
+
+  .isth26 .oral-communication-box {
+    gap: 16px;
+  }
+
+  .isth26 .oral-communication-box {
+    padding-right: 8px;
+  }
+
+  .live-icon img {
+    width: 64px;
+  }
+
+  .isth26 #event-details-data-2 .event-details-agenda-speakers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1023px) {
+  .isth26 .isth-video {
+    order: 1;
+  }
+
+  .isth26 .isth-detail {
+    order: 2;
+  }
+
+  .isth26 .isth-bottom-outline {
+    order: 3;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .isth26 .isth-event-list .col {
+    max-width: 100%;
+  }
+
+  .isth26 .isth-banner-section-inset:before {
+    background: var(--secondary-color);
+  }
+
+  .isth26 .isth-banner-section-left {
+    padding: 15px 15px 80px 15px;
+  }
+
+  .isth26 .isth-banner-section-left h3 {
+    letter-spacing: 0.8px;
+  }
+
+  .isth26 .isth-banner-section-right .one_source_video img {
+    width: auto;
+    height: 200px;
+  }
+
+  .isth26 .octapharma-logo {
+    bottom: 32px;
+    right: 16px;
+  }
+
+  .isth26 .octapharma-logo img {
+    width: 92px;
+  }
+
+  .isth26 .event-details-view::before {
+    left: -9px;
+  }
+
+  .isth26 #event-details-data-1 .event-details-view::before {
+    left: -1%;
+  }
+
+  .isth26 #event-details-data-2 .event-details-view::before {
+    left: -3%;
+  }
+
+  .isth26 .event-details-view-inset>h3 {
+    font-size: 19px;
+    padding: 0 40px;
+    font-weight: 700;
+  }
+
+  .isth26 #event-details-data-1 .event-details-view-inset>p {
+    padding: 0 12px;
+  }
+
+  .isth26 #event-details-data-0 .event-details-view-inset .event-agenda-list>div p span {
+    color: #00A993;
+  }
+
+  .isth26 #event-details-data-1 .event-details-view-inset .event-agenda-list>div p span {
+    color: #E94362;
+  }
+
+  .isth26 .event-details-view-inset .event-agenda-list .agenda-btn {
+    margin-top: 0;
+  }
+
+  .isth26 .event-details-view-inset>p {
+    font-size: 19px;
+    font-weight: 400;
+  }
+
+  .isth26 .event-details-view-inset .event-agenda-list .agenda-btn {
+    border-left: none;
+  }
+  .isth26 #event-details-data-2 .event-details-agenda-speakers ,
+  .isth26 .event-details-agenda-speakers{
+    padding: 0 10px;
+    }
+  .isth26 .event-details-view-inset .event-agenda-list .agenda-btn {
+    border-top: 1px dashed var(--text-color);
+  }
+
+  .isth26 .event-details-view-inset .agenda-video {
+    margin: 40px 0;
+  }
+
+  .isth26 .agenda-video-box .agenda-video-details .symposium-agenda,
+  .isth26 #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda,
+  .isth26 #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda,
+  .isth26 #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+    padding: 12px;
+    background-color: transparent;
+  }
+
+  .isth26 .agenda-video-viewer .mobile_viewer img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .isth26 .paris-outline-right,
+  .isth26 .agenda-video-viewer .mobile_viewer {
+    display: none;
+  }
+
+  .isth26 #event-details-data-1 .event-details-view-inset .agenda-video,
+  .isth26 #event-details-data-2 .event-details-view-inset .agenda-video,
+  .isth26 #event-details-data-3 .event-details-view-inset .agenda-video {
+    margin: 40px 0px;
+  }
+
+  .isth26 .paris-outline img {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .isth26 .isth-event-list {
+    margin: 0 0 40px;
+  }
+
+  .isth26 .event-details-view-inset {
+    margin-bottom: 80px;
+  }
+
+  .isth26 #event-details-data-2 .event-details-view-inset {
+    margin-bottom: 0;
+  }
+
+  .isth26 #event-details-data-0 .event-details-agenda-details:after {
+    background: url(/images/dotted-line-mobile0.svg) no-repeat;
+    background-position: center;
+  }
+
+  .isth26 #event-details-data-2 .event-details-agenda-details:after {
+    background: url(/images/dotted-line-mobile3.svg) no-repeat;
+    background-position: center;
+  }
+
+  .isth26 #event-details-data-3 .event-details-agenda-details:after {
+    background: url(/images/dotted-line-mobile4.svg) no-repeat;
+    background-position: center;
+  }
+
+  .isth26 .agenda-video-box .agenda-video-img .video-agenda-play {
+    left: 0;
+    right: 0;
+    top: 50%;
+  }
+
+  .isth26 .session-venue .d-flex.session-date,
+  .isth26 .session-venue .d-flex.session-time,
+  .isth26 .session-venue .d-flex.session-location {
+    margin: 0 auto;
+  }
+
+  .isth26 .agenda-video-box .agenda-video-details .symposium-agenda h3,
+  .isth26 .agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-title {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+
+  .event-details-agenda-speakers>.d-flex {
+    align-items: center;
+  }
+
+  .live-stream-wrapper {
+    padding: 10px 10px 12px 10px;
+  }
+
+  .live-stream-banner {
+    background: linear-gradient(180deg, #F3942D 0.2%, #E94362 100.2%);
+  }
+
+  .live-stream-banner,
+  .live-stream-left {
+    flex-direction: column;
+  }
+
+  .live-content {
+    text-align: center;
+  }
+
+  .live-content h3 {
+    font-size: 18px;
+  }
+
+  .meta-item {
+    font-size: 14px;
+  }
+
+  .meta-item img {
+    width: 20px;
+  }
+
+  .live-icon img {
+    width: 48px;
+  }
+
+  .live-stream-right {
+    margin: 24px 0 12px;
+  }
+
+  .live-stream-right a {
+    font-size: 14px;
+  }
+
+  .live-meta {
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  .live-stream-right::after {
+    content: "";
+    position: absolute;
+    left: -35px;
+    right: -35px;
+    top: -24px;
+    bottom: 0;
+    border-top: 1px dashed var(--text-color);
+  }
+
+  .live-stream-right::before {
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 414px) {
+  .isth26 .event-details-view-inset>h3 {
+    padding: 0 60px;
+  }
+}
+
+@media only screen and (max-width: 398px) {
+  .isth26 .event-details-view-inset>h3 {
+    padding: 0px 40px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .isth26 .event-details-view-inset>h3 {
+    padding: 0px 20px;
+  }
+}
+.isth-agenda-modal.isth2026-modal .modal-dialog .modal-content {
+  border-radius: 8px;
+  background: rgba(49, 60, 79, 0.20);
+  box-shadow: 0 0 10px 0 rgba(0, 14, 36, 0.49);
+  backdrop-filter: blur(25px);
+  border: none;
+}
+
+.isth-agenda-modal.isth2026-modal .ISTH-agenda-modal-body video {
+  object-fit: cover;
+  border-radius: 4px;
+  background: var(--secondary-color);
+  box-shadow: 0 0 10px 0 rgba(0, 14, 36, 0.80);
+}
+/* -------ISTH 2026 Promotional page UI End------- */

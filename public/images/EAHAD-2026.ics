@@ -1,0 +1,22 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//sebbo.net//ical-generator//EN
+NAME:Octapharma Symposium at EAHAD – Tailored to the Patient, Driven by
+ Data: Optimising Prophylaxis in VWD
+X-WR-CALNAME:Octapharma Symposium at EAHAD – Tailored to the Patient, Dr
+ iven by Data: Optimising Prophylaxis in VWD
+BEGIN:VEVENT
+UID:6724ab22-a443-4f73-a99f-27acc1f1959d
+SEQUENCE:0
+DTSTAMP:20260106T074943Z
+DTSTART:20260204T173000Z
+DTEND:20260204T183000Z
+SUMMARY:Octapharma Symposium at EAHAD – Tailored to the Patient\, Driven
+  by Data: Optimising Prophylaxis in VWD
+LOCATION:Convention Center Dublin\, Room: Liffey A
+DESCRIPTION: 
+ORGANIZER;CN="haematology.octapharma@octapharma.com";SENT-BY="mailto:haema
+ tology.octapharma@octapharma.com":mailto:haematology.octapharma@octapharma
+ .com
+END:VEVENT
+END:VCALENDAR

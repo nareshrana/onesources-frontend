@@ -1,0 +1,19 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//sebbo.net//ical-generator//EN
+NAME:WFH 2026 - Beyond Replacement: Redefining Factor VIII and Inhibitor Care in Haemophilia A
+X-WR-CALNAME:WFH 2026 - Beyond Replacement: Redefining Factor VIII and Inhibitor Care in Haemophilia A
+
+BEGIN:VEVENT
+UID:584c64e1-267b-486f-83df-4aea7b66aee0
+SEQUENCE:0
+DTSTAMP:20260313T053443Z
+DTSTART:20260419T173000Z
+DTEND:20260419T183000Z
+SUMMARY:WFH 2026 - Beyond Replacement: Redefining Factor VIII and Inhibitor Care in Haemophilia A
+LOCATION:Kuala Lumpur\, Malaysia
+DESCRIPTION:WFH 2026 symposium session.
+ORGANIZER;CN=Octapharma:mailto:haematology.octapharma@octapharma.com
+END:VEVENT
+
+END:VCALENDAR

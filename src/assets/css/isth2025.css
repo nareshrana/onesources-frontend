@@ -1,0 +1,2025 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+:root {
+  --white: #ffffff;
+  --light-blue: #0066be;
+  --light-skyblue: #e7eff6;
+  --red: #ff0000;
+  --blue: #004a89;
+  --yellow: #fac755;
+  --violet: #8a4e9c;
+  --light-violet: #986ca5;
+  --skyblue: #97b6cf;
+  --black: #000000;
+  --primary: #001489;
+  --secondary: #00a993;
+  --light-black: #303030;
+  --carat: #ca2a48;
+  --light-gray: #6e7288;
+  --error: #e74c3c;
+  --light-green: #B0CF3E;
+  --darkk-green: #8CB200;
+  --orange: #F3942D;
+  --dark-orange: #DD7300;
+  --pink: #B02070;
+  --dark-pink: #920051;
+  --green: #00A993;
+  --dark-green: #008170;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  cursor: pointer;
+}
+
+body.isth2025 {
+  font-family: "Poppins";
+  font-weight: 400;
+  color: var(--primary);
+  background: #222A37;
+}
+
+.promotion-page.isth25 {
+  background: #222A37;
+  padding: 32px 20px 24px;
+}
+.promotion-page.isth25 .coming-soon {
+  border-radius: 8px;
+  border: 0.5px solid rgb(0 169 147 / 13%);
+  background: rgba(49, 60, 79, 0.20);
+  box-shadow: 0px 0px 27.6px 0px rgba(0, 14, 36, 0.53);
+  -webkit-backdrop-filter: blur(150px);
+  backdrop-filter: blur(150px);
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  position: relative;
+}
+.promotion-page.isth25 .coming-soon h1 {
+  color: var(--white);
+  text-shadow: 0px 0px 3.9px var(--white);
+  font-family: "Poppins";
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: 2.24px;
+  margin-top: 82px;
+}
+.promotion-page.isth25 .coming-soon h3 {
+color: var(--white);
+text-align: center;
+text-shadow: 0px 0px 3.9px var(--white);
+font-family: "Poppins";
+font-size: 40px;
+font-weight: 300;
+letter-spacing: 1.6px;
+}
+.isth-banner-section {
+  padding: 1px;
+  position:relative;
+  border-radius: 8px;
+  margin-bottom: 48px;
+}
+.isth-banner-section:after {
+  content: "";
+  background: linear-gradient(135deg, #00a993 0%, #c7ea46 6%, #f3942d 12%, #e94362 18%, rgb(255 255 255 / 25%) 35%, rgb(255 255 255 / 0%) 100%);
+  border-radius: 8px;
+  opacity: 0.4;
+  position: absolute;
+  left: 0;
+  right:0;
+  top:0;
+  bottom: 0;
+}
+.isth-banner-section-inset {
+  padding: 15px;
+  border-radius: 8px;
+  background: #222A37 url(/images/banner-bg-circle.png) no-repeat;
+  box-shadow: 0px 0px 27.6px 0px rgba(0, 14, 36, 0.53);
+  -webkit-backdrop-filter: blur(50px);
+  backdrop-filter: blur(50px);
+  background-size: 313px;
+  position: relative;
+  z-index: 1;
+}
+
+.isth25 .custom-container {
+  padding: 0 12px;
+}
+.isth-banner-section-left {
+  padding: 32px 16px 24px 24px;
+}
+.isth-banner-section-left img{
+  max-width: 155px;
+  margin-bottom: 42px;
+}
+.isth-banner-section-left h2{
+  letter-spacing: 1.92px;
+  line-height: 56px;
+  color: var(--white);
+  font-family: "Poppins";
+  font-weight: 600;
+  font-size: 48px;
+}
+.isth-banner-section-left h2 span {
+  color: var(--light-green);
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+}
+
+.isth-banner-section-left h3 {
+  font-weight: 400;
+  letter-spacing: 1.28px;
+  line-height: normal;
+  margin-bottom: 0;
+  color: var(--white);
+}
+.isth-banner-section-left h3 span {
+  color: var(--light-green);
+}
+.isth-banner-section-left h3.add-space {
+  margin-top: 40px;
+}
+.isth-banner-section-left h3 span {
+  color: var(--light-green);
+}
+
+.isth-banner-section-left h3 {
+  font-weight: 400;
+  letter-spacing: 1.28px;
+  line-height: normal;
+  margin-bottom: 0;
+}
+
+.isth-banner-section-left h3.add-space {
+  margin-top: 40px;
+}
+
+.isth-banner-section-right .one_source_video {
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.isth-banner-section-right video {
+  max-width: 1017px;
+  max-height: 573px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+}
+.isth-event-list .col {
+  max-width: 404px;
+}
+.isth-event-list .event-list-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.isth-event-list .col {
+  max-width: 404px;
+}
+
+.event-card .card-header {
+  border-radius: 8px 8px 0px 0px;
+  background: var(--light-green);
+  box-shadow: 0px 0px 10px 0px rgba(0, 14, 36, 0.49);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+  padding: 16px 24px;
+  margin:0 0 10px;
+  min-height: 181px;
+}
+.event-card-2 .event-card .card-header {
+  background: var(--orange);
+}
+.event-card-3 .event-card .card-header {
+  background: var(--pink);
+}
+.event-card-4 .event-card .card-header {
+  background: var(--green);
+}
+.event-card .card-header p {
+  letter-spacing: 0.64px;
+  font-family: "Roboto Slab", serif;
+  color: var(--white);
+  margin-bottom: 8px;
+}
+.event-card .card-header h6 {
+  letter-spacing: 0.8px;
+  font-weight: 600;
+  color: var(--white);
+  margin:0;
+}
+.event-card .card-body {
+  padding: 24px 24px 16px;
+  border-radius: 0px 0px 8px 8px;
+  background: rgba(49, 60, 79, 0.20);
+  box-shadow: 0px 0px 10px 0px rgba(0, 14, 36, 0.49);
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-card .card-body > div {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  flex-direction: column;
+}
+.event-card .card-body > div div {
+  width: 100%;
+  align-items: flex-start;
+  display: flex;
+  gap: 16px;
+  padding-right: 30px;
+}
+.event-card .card-body > div p {
+  margin: 0;
+  color: var(--white);
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0.64px;
+}
+.event-card .card-body > div p span{
+  color: #105161;
+}
+.event-card-2 .event-card .card-body > div p span{
+  color: #E94362;
+}
+.event-card-3 .event-card .card-body > div p span{
+  color: #E97E00;
+}
+.event-card-4 .event-card .card-body > div p span{
+  color: #E2DF31;
+}
+.isth-event-list {
+  margin: 0 0 100px;
+}
+
+.event-list-card .card-body button, .event-list-card.event-card-2 .card-body button, .event-list-card.event-card-3 .card-body button, .event-list-card.event-card-4 .card-body button  {
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Poppins';
+  padding: 7px 20px;
+  border-radius: 30px;
+  border: 1px solid var(--white);
+  box-shadow: 0px 0px 16px 0px rgba(41, 49, 125, 0.16);
+  background: transparent;
+  max-width: 281px;
+  margin: 0 auto;
+  width: 100%;
+}
+.event-list-card .card-body button:hover, .event-list-card .card-body button:active {
+  background: var(--light-green);
+  color: var(--white);
+}
+.event-list-card .card-body button:active {
+  border-color: var(--light-green);
+}
+.event-list-card.event-card-2 .card-body button:hover {
+  background: var(--orange);
+  color: var(--white);
+}
+.event-list-card.event-card-3 .card-body button:hover{
+  background: var(--pink);
+  color: var(--white);
+}
+.event-list-card.event-card-4 .card-body button:hover  {
+  background: var(--green);
+  color: var(--white);
+}
+.event-card .card-body .isth-event-btn {
+  margin: 24px -24px 0;
+  border-top: 1px dashed var(--white);
+  padding-top: 16px;
+}
+.event-list-card .event-card {
+  height: 100%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.event-card .card-body button img, .event-list-card button img {
+  margin-left: 10px;
+}
+
+.event-list-card button {
+  max-width: 281px;
+  margin: 0 auto;
+  border-radius: 30px;
+  padding: 7px 15px;
+  font-weight: 600;
+  font-size: 16px;
+  background: var(--light-green);
+  border-color:var(--light-green);
+}
+.event-list-card button:hover, .event-list-card button[aria-expanded="true"], .event-card-1.event-list-card button:active {
+  background: var(--darkk-green);
+  border-color:var(--darkk-green);
+}
+.event-list-card button img {
+  transform: rotate(0deg);
+  transition: 0.4s ease;
+}
+.event-list-card button[aria-expanded="true"] img {
+  transform: rotate(180deg);
+}
+/* .event-card-1 .event-list-card button:active {
+  background: var(--darkk-green)!important;
+  border-color:var(--darkk-green)!important;
+} */
+.event-list-card.event-card-2 button {
+  background: var(--orange);
+  border-color:var(--orange);
+}
+.event-list-card.event-card-2 button:hover, .event-list-card.event-card-2 button[aria-expanded="true"] {
+  background: var(--dark-orange);
+  border-color:var(--dark-orange);
+}
+.event-list-card.event-card-3 button {
+  background: var(--pink);
+  border-color:var(--pink);
+}
+.event-list-card.event-card-3 button:hover, .event-list-card.event-card-3 button[aria-expanded="true"] {
+  background: var(--dark-pink);
+  border-color:var(--dark-pink);
+}
+.event-list-card.event-card-4 button {
+  background: var(--green);
+  border-color:var(--green);
+}
+.event-list-card.event-card-4 button:hover, .event-list-card.event-card-4 button[aria-expanded="true"] {
+  background: var(--dark-green);
+  border-color:var(--dark-green);
+}
+.isth_promo_img img {
+  width: 100%;
+}
+.isth-event-list .event-details-collapse {
+	order: 5;
+}
+
+.oral-communication, .scientific-development {
+  border-radius: 8px;
+  background: rgba(49, 60, 79, 0.20);
+  box-shadow: 0px 0px 27.6px 0px rgba(0, 14, 36, 0.53);
+  -webkit-backdrop-filter: blur(99.19999694824219px);
+  backdrop-filter: blur(99.19999694824219px);
+  padding: 32px;
+}
+.oral-communication-inset h3, .scientific-development-inset h3 {
+  color: var(--white);
+  font-family: "Roboto Slab", serif;
+  letter-spacing: 1.28px;
+  margin:0 0 48px;
+  line-height: normal;
+}
+.oral-communication-card h6 {
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.8px;
+  color:var(--light-green);
+  margin:0 0 8px;
+}
+.oral-communication-card p {
+  color: var(--white);
+  font-size: 15px;
+  margin:0 0 8px;
+}
+
+.oral-communication-box {
+  gap: 24px;
+  padding-right: 95px;
+  margin: 24px 0 0;
+}
+.oral-communication-inset .row {
+  gap: 80px 0;
+}
+.oral-communication-box .speaker-img img {
+  width: 100px;
+}
+.oral-communication-box .session-details span {
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.56px;
+  line-height: normal;
+  font-family: "Roboto Slab", serif;
+}
+.session-venue {
+  margin: 8px 0 0;
+}
+.session-venue .session-date p, .session-venue .session-time p, .session-venue .session-location p {
+  margin: 0 0 0;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 1.82px;
+}
+.session-venue .session-date img, .session-venue .session-time img, .session-venue .session-location img{
+  width:16px;
+  height:16px;
+}
+.session-venue > .d-flex {
+  gap: 24px;
+}
+.session-venue .d-flex.session-date, .session-venue .d-flex.session-time, .session-venue .d-flex.session-location {
+  gap: 12px;
+}
+.session-venue .session-location {
+  margin: 8px 0 0;
+}
+
+
+.scientific-development-inset .row {
+  gap: 40px 0;
+}
+
+.scientific-development-inset  .oral-communication-box {
+  margin: 0;
+}
+.scientific-development{
+  margin-bottom: 65px;
+}
+.isth25 .disclaimer-text {
+  margin: 0 0 0px;
+}
+.isth25 .disclaimer-text p {
+  width: 100%;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.50);
+  font-size: 14px;
+  letter-spacing: 0.56px;
+  margin: 0 0 6px;
+  line-height: normal;
+}
+.event-details-view {
+  border-radius: 8px;
+  position:relative;
+}
+.event-details-view::before {
+  content: "";
+  position: absolute;
+  top: -26px;
+  left: 160px;
+  /* background-image: url(/images/shape-polygon.svg); */
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2247%22%20height%3D%2235%22%20viewBox%3D%220%200%2047%2035%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M19.5011%202.32797C21.5011%20-0.336798%2025.4989%20-0.336805%2027.4989%202.32797L45.6403%2026.4986C48.1141%2029.7945%2045.7624%2034.5%2041.6414%2034.5H5.35862C1.23758%2034.5%20-1.11412%2029.7945%201.35968%2026.4986L19.5011%202.32797Z%22%20fill%3D%22%23252E3C%22/%3E%3C/svg%3E");
+  width: 47px;
+  height: 35px;
+  filter: drop-shadow(0px -2px 5px rgba(199, 234, 70, 1));
+  fill: rgba(49, 60, 79, 0.20);
+  stroke-width: 1px;
+  stroke: var(--light-green);
+}
+
+.event-details-view-inset {
+  border-radius: 8px;
+  background: rgb(29 39 54);
+  box-shadow: 0px 0px 27.6px 0px rgba(0, 14, 36, 0.53);
+  -webkit-backdrop-filter: blur(99.19999694824219px);
+  backdrop-filter: blur(99.19999694824219px);
+  padding: 24px;
+  position: relative;
+}
+#event-details-data-0 .event-details-view {
+stroke-width: 1px;
+stroke: var(--light-green);
+box-shadow: 0px 0px 16px rgba(199, 234, 70, 0.80);
+}
+#event-details-data-1 .event-details-view {
+  stroke-width: 1px;
+  stroke: #F3942D;
+  box-shadow: 0px 0px 16px rgba(243, 148, 45, 0.80);
+  }
+  #event-details-data-1 .event-details-view::before {
+    filter: drop-shadow(0px 0px 16px rgba(243, 148, 45, 0.80));
+    stroke: #F3942D;
+    left: 35%;
+  }
+  #event-details-data-2 .event-details-view {
+    stroke-width: 1px;
+    stroke: var(--pink);
+    box-shadow: 0px 0px 16px #B02070;
+    }
+  #event-details-data-2 .event-details-view::before {
+    filter: drop-shadow(0px 0px 16px #B02070);
+    stroke: var(--pink);
+    left:62%;
+  }
+  #event-details-data-3 .event-details-view {
+    stroke-width: 1px;
+    stroke: var(--green);
+    box-shadow: 0px 0px 16px rgba(0, 169, 147, 0.80);
+    }
+  #event-details-data-3 .event-details-view::before {
+    filter: drop-shadow(0px 0px 16px rgba(0, 169, 147, 0.80));
+    stroke: var(--green);
+    left: auto;
+    right: 162px;
+  }
+.event-details-view-inset > h3 {
+  font-family: "Roboto Slab";
+  color: var(--light-green);
+  text-align: center;
+  letter-spacing: 1.28px;
+  margin: 48px 0 0;
+  line-height: 1.2;
+}
+#event-details-data-1 .event-details-view-inset > h3 {
+  color: var(--orange);
+}
+#event-details-data-2 .event-details-view-inset > h3 {
+  color: var(--pink);
+}
+#event-details-data-3 .event-details-view-inset > h3 {
+  color: var(--green);
+}
+.event-details-collapse.show {
+  animation: slide_down 2s linear;
+}
+.event-details-collapse {
+  padding-top: 40px;
+  animation: slide_up 2s linear;
+}
+@keyframes slide_down {
+  0% {
+    transform: translateY(-30px);
+    height:100%;
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0%);
+    height:100%;
+    opacity: 1;
+  }
+}
+@keyframes slide_up {
+  0% {
+    transform: translateY(0px);
+    height:100%;
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateY(-30px);
+    height:100%;
+    opacity: 0;
+  }
+}
+.event-details-agenda {
+  border-radius: 8px;
+  background: rgba(49, 60, 79, 0.20);
+  box-shadow: 0px 0px 10px 0px rgba(0, 14, 36, 0.49);
+  margin: 72px 0 12px;
+  padding: 16px;
+}
+.event-details-view-inset .event-agenda-list {
+  border-radius: 4px;
+  background: var(--light-green);
+  box-shadow: 0px 0px 17px 0px rgba(0, 20, 137, 0.16);
+  padding: 14px 40px;
+  display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 100px;
+}
+#event-details-data-1 .event-details-view-inset .event-agenda-list {
+  background: var(--orange);
+}
+#event-details-data-2 .event-details-view-inset .event-agenda-list {
+  background: var(--pink);
+}
+#event-details-data-3 .event-details-view-inset .event-agenda-list {
+  background: var(--green);
+}
+.event-details-view-inset .event-agenda-list > div {
+  gap: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.event-details-view-inset .event-agenda-list > div p {
+  margin: 0;
+  color: var(--white);
+  line-height: 23px;
+  letter-spacing: 0.64px;
+  font-weight: 500;
+}
+
+.event-details-view-inset .event-agenda-list .agenda-btn {
+  margin-left: auto;
+  padding-left: 40px;
+  border-left: 1px dashed var(--white);
+}
+
+.event-details-view-inset .event-agenda-list .agenda-btn a {
+  border-radius: 30px;
+  background: var(--white);
+  box-shadow: 0px 0px 16px 0px rgba(41, 49, 125, 0.16);
+  padding: 10px 20px;
+  color: var(--light-green);
+  font-weight: 600;
+  line-height: 20px;
+}
+.event-details-view-inset .event-agenda-list .agenda-btn a:hover {
+  background: var(--darkk-green);
+  color: var(--white);
+  box-shadow: 0px 0px 12px 0px rgba(41, 49, 125, 0.21);
+}
+#event-details-data-1 .event-details-view-inset .event-agenda-list .agenda-btn a {
+  color: var(--orange);
+}
+#event-details-data-1 .event-details-view-inset .event-agenda-list .agenda-btn a:hover {
+  background: var(--dark-orange);
+  color: var(--white);
+}
+#event-details-data-2 .event-details-view-inset .event-agenda-list .agenda-btn a {
+  color: var(--pink);
+}
+#event-details-data-2 .event-details-view-inset .event-agenda-list .agenda-btn a:hover {
+  background: var(--dark-pink);
+  color: var(--white);
+}
+#event-details-data-3 .event-details-view-inset .event-agenda-list .agenda-btn a {
+  color: var(--green);
+}
+#event-details-data-3 .event-details-view-inset .event-agenda-list .agenda-btn a:hover {
+  background: var(--dark-green);
+  color: var(--white);
+}
+.event-details-agenda-inset {
+  border-radius: 4px;
+  background: #222A37;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+  padding: 24px;
+}
+
+.event-details-agenda-speakers {
+  padding: 0 84px;
+}
+.event-details-agenda-speakers .event-agenda-speaker {
+  max-width: 245px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-details-agenda-speakers .event-agenda-speaker img {
+  max-width: 93px;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
+.event-details-agenda-speakers .event-agenda-speaker p.introduction {
+  font-weight: 300;
+}
+
+.event-details-agenda-speakers .event-agenda-speaker p {
+  color: var(--white);
+  font-weight: 500;
+  margin: 0 0 0px;
+  line-height: normal;
+}
+
+.event-details-agenda-speakers .event-agenda-speaker p.chair-person {
+  color: var(--light-green);
+  font-weight: 400;
+  margin-top:3px;
+}
+#event-details-data-1 .event-details-agenda-speakers .event-agenda-speaker p.chair-person {
+  color: var(--orange);
+}
+#event-details-data-2 .event-details-agenda-speakers .event-agenda-speaker p.chair-person {
+  color: var(--pink);
+}
+#event-details-data-3 .event-details-agenda-speakers .event-agenda-speaker p.chair-person {
+  color: var(--green);
+}
+.event-details-agenda-details {
+  position: relative;
+}
+.event-details-agenda-details:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: url(/images/dotted-line.svg) no-repeat;
+  height:100%;
+  width: 4px;
+  top: 0;
+}
+#event-details-data-1 .event-details-agenda-details:after {
+  background: url(/images/dotted-line-o.svg) no-repeat;
+}
+#event-details-data-2 .event-details-agenda-details:after {
+  background: url(/images/dotted-line-p.svg) no-repeat;
+}
+#event-details-data-3 .event-details-agenda-details:after {
+  background: url(/images/dotted-line-g.svg) no-repeat;
+}
+.event-details-agenda-details h3 {
+  color: var(--light-green);
+  font-family: "Roboto Slab";
+  font-weight: 500;
+  margin: 0 0 16px;
+}
+#event-details-data-1 .event-details-agenda-details h3 {
+  color: var(--orange);
+}
+#event-details-data-2 .event-details-agenda-details h3 {
+  color: var(--pink);
+}
+#event-details-data-3 .event-details-agenda-details h3 {
+  color: var(--green);
+}
+.event-details-agenda-details p {
+  color: var(--white);
+  margin: 0;
+  line-height: normal;
+  padding-right: 40px;
+  font-weight: 300;
+}
+.event-details-view-inset img.close-btn {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  cursor: pointer;
+}
+.event-details-view-inset .agenda-video {
+  border-radius: 8px;
+  background: rgba(49, 60, 79, 0.20);
+  box-shadow: 0px 0px 10px 0px rgba(0, 14, 36, 0.49);
+  padding: 16px;
+  margin: 100px 0;
+}
+#event-details-data-1 .event-details-view-inset .agenda-video, #event-details-data-2 .event-details-view-inset .agenda-video, #event-details-data-3 .event-details-view-inset .agenda-video {
+  margin: 100px 0 64px;
+}
+.event-details-view-inset .agenda-video .agenda-video-box {
+  border-radius: 4px;
+  background: #212938;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+}
+
+.event-details-view-inset .agenda-video-img img {
+  width: 100%;
+}
+.agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 0 120px 0 108px;
+  position: relative;
+  background:url(/images/video-agenda-circle-green.png) no-repeat;
+  background-position: center left;
+    background-size: 435px;
+}
+#event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda {
+  background:url(/images/video-agenda-circle-orange.png) no-repeat;
+  background-position: -50px center;
+  background-size: 435px;
+}
+#event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda {
+  background:url(/images/video-agenda-circle-pink.png) no-repeat;
+  background-position: -50px center;
+  background-size: 435px;
+}
+#event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+  background:url(/images/video-agenda-circle-yellow.png) no-repeat;
+  background-position: 0px center;
+  background-size: 435px;
+  padding: 0 48px 0 58px;
+}
+.agenda-video-box .agenda-video-details .symposium-agenda h3 {
+  color: var(--white);
+  font-family: "Roboto Slab";
+  line-height: normal;
+  font-weight: 600;
+}
+
+.agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-heading {
+  font-weight: 300;
+  margin-bottom: 12px;
+  line-height: normal;
+  font-family: 'Poppins';
+}
+.event-details-view-inset .speaker-videos .speaker-videos-list{
+  margin: 0px 0 64px;
+}
+.speaker-videos .d-flex {
+  gap: 40px;
+}
+#event-details-data-1 .event-details-view .disclamer-text, #event-details-data-2 .event-details-view .disclamer-text, #event-details-data-3 .event-details-view .disclamer-text {
+  text-align: left;
+}
+.speaker-videos .speaker-videos-list {
+  max-width: 100%;
+  border-radius: 8px;
+  background: rgba(49, 60, 79, 0.20);
+  box-shadow: 0px 0px 10px 0px rgba(0, 14, 36, 0.49);
+  padding: 16px;
+
+}
+.speaker-videos .speaker-videos-list-inset{
+  position: relative;
+}
+.speaker-videos .speaker-videos-list-inset:after {
+  content: "";
+  border-radius: 4px;
+  background: rgb(34 42 55 / 30%);
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  left:0;
+}
+.speaker-videos .speaker-videos-list img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  cursor: pointer;
+}
+#event-details-data-3 .event-details-view-inset .agenda-video.symposium-nuwiq {
+    box-shadow: none;
+    background: transparent;
+    padding: 0;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset {
+    background: #212a38 url(/images/video-agenda-circle-yellow-new.png) no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    background-position: -10px -10px;
+    background-size: 300px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list .speaker-videos-list-inset {
+border-radius: 4px;
+box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:first-child .speaker-videos-list-inset {
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+    /* border-radius: 0; */
+    height:100%;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list-inset img {
+    height:100%;
+}
+#event-details-data-3 .event-details-view-inset .agenda-video.symposium-nuwiq .speaker-videos-list {
+    margin: 0;
+}
+.speaker-videos.symposium-nuwiq .d-flex {
+    gap: 64px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-text {
+    background: transparent;
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    justify-content: flex-start;
+    max-width: 605px;
+    align-items: flex-start;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child h5.symposium-agenda-heading {
+    font-weight: 300;
+    padding-top: 16px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset img {
+  width: auto;
+  border-radius: 4px;
+  display: block;
+  cursor: pointer;
+  height:100%;
+  max-height: 472px;
+}
+.speaker-videos .speaker-videos-list .play-icon {
+  position: absolute;
+  z-index: 2;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  width: 69px;
+  margin: 0 auto;
+}
+.speaker-videos .speaker-videos-list .play-icon img {
+  max-width: 68px;
+}
+
+.speaker-videos .speaker-videos-list .speaker-videos-text {
+  position: absolute;
+  display: inline-flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  left: 16px;
+  bottom: 16px;
+  background: #222A37;
+  max-width: 466px;
+  z-index: 1;
+}
+
+.speaker-videos .speaker-videos-list .speaker-videos-text h5 {
+  margin: 0;
+  color: #fff;
+  font-family: "Roboto Slab";
+  line-height: normal;
+  font-weight: 500;
+}
+.event-details-view .disclamer-text {
+  text-align: center;
+}
+.ISTH-agenda-modal-body video {
+  object-fit: cover;
+}
+.event-details-view .disclamer-text p {
+  margin: 0 0;
+  color: rgba(255, 255, 255, 0.50);
+  letter-spacing: 0.56px;
+  font-size: 14px;
+  line-height: normal;
+}
+.agenda-video-box .agenda-video-img .video-agenda-play {
+  position: absolute;
+  left: -30px;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.agenda-video-box .agenda-video-img .video-agenda-play img {
+  max-width: 68px;
+  width: 100%;
+  cursor: pointer;
+}
+.agenda-video-box .agenda-video-img {
+	position: relative;
+}
+.agenda-video-img .video-agenda-play:before, .speaker-videos .speaker-videos-list .play-icon:before {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 6px solid rgba(255,255,255,.6);
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.65,0,.34,1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.agenda-video-img .video-agenda-play:after, .speaker-videos .speaker-videos-list .play-icon:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  border: 6px solid rgba(255,255,255,.6);
+  border-radius: 100%;
+  animation-name: ripple;
+  animation-duration: 3s;
+  animation-delay: .5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(.65,0,.34,1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+
+.isth-agenda-modal .modal-dialog {
+  max-width: 1280px;
+  width: 100%;
+}
+.isth-agenda-modal .modal-dialog .modal-content {
+  border-radius: 4px;
+  border: 1px solid rgba(255,255,255,.05);
+  background: #fcfcfc14;
+}
+.isth-agenda-modal .modal-dialog .modal-content .modal-header .modal-title{
+  color:var(--white);
+  font-size: 16px;
+  background: none;
+    background-clip: inherit;
+    -webkit-background-clip: inherit;
+    -webkit-text-fill-color: inherit;
+    font-weight: 400;
+}
+.isth-agenda-modal .modal-header {
+  border: 0;
+  padding: 12px 16px 0;
+}
+.isth-agenda-modal .modal-header button.btn-close {
+  background-image: url("/images/close-arrow-icon.svg");
+  opacity: 1;
+}
+.oral-communication-card {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+}
+/* .ISTH-agenda-modal-body .react-player__preview {
+  background-repeat: no-repeat!important;
+  background-size: initial!important;
+} */
+.event-card .card-body > div div p a {
+  background: linear-gradient(90deg, #F3942D 28.31%, #E94362 99.8%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.modal .video-btn-play {
+  width: 68px;
+  height: 68px;
+}
+#event-details-data-0 .event-details-view-inset .event-agenda-list > div p span {
+  color: #105161;
+}
+#event-details-data-1 .event-details-view-inset .event-agenda-list > div p span {
+  color: #E94362;
+}
+#event-details-data-2 .event-details-view-inset .event-agenda-list > div p span {
+  color: #E97E00;
+}
+#event-details-data-3 .event-details-view-inset .event-agenda-list > div p span {
+  color: #E2DF31;
+}
+
+.isth2025 ::-webkit-scrollbar-thumb {
+  background: var(--white);
+}
+
+.isth2025 ::-webkit-scrollbar-track {
+  background: #222A37;
+}
+#event-details-data-1 .event-details-agenda-details p {
+  padding-right: 30px;
+}
+
+@media only screen and (min-width: 1921px) {
+.ISTH-agenda-modal-body .one_source_video {
+    height: auto!important;
+    max-height: 66vh;
+}
+.ISTH-agenda-modal-body .one_source_video video{
+  max-height: 65vh;
+}
+  }
+@media only screen and (max-width: 1539px) {
+  .speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset img {
+    max-height: 400px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list .speaker-videos-text {
+    max-width: 406px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-text {
+    max-width: 520px;
+}
+  .event-details-view::before {
+    left: 130px;
+  }
+  #event-details-data-2 .event-details-view::before {
+    left: 60.5%;
+  }
+  #event-details-data-3 .event-details-view::before {
+    right: 138px;
+  }
+  .isth-banner-section-left {
+    padding: 8px 16px 24px 8px;
+  }
+  .isth-banner-section-left img {
+    max-width: 100px;
+    margin-bottom: 22px;
+  }
+  .isth-banner-section-left h2 span {
+    font-size: 32px;
+  }
+  .isth-banner-section-left h2 {
+    line-height: 43px;
+    font-size: 32px;
+    letter-spacing: 0.5px;
+  }
+  .isth-banner-section-left h3 span, .isth-banner-section-left h3 {
+    font-size: 20px;
+  }
+  .isth-banner-section-left h3.add-space {
+    margin-top: 18px;
+  }
+  .isth-banner-section {
+    margin-bottom: 32px;
+  }
+  .event-card .card-header {
+    padding: 14px 16px;
+    min-height: 148px;
+  }
+  .event-card .card-header h6 {
+    font-size: 15px;
+    line-height: normal;
+  }
+  .event-card .card-header p {
+    margin-bottom: 6px;
+  }
+  .event-card .card-body {
+    padding: 24px 16px 24px;
+  }
+  .event-card .card-body > div {
+    gap: 24px;
+  }
+  .event-card .card-body > div div img {
+    width: 20px;
+    height: auto;
+    max-height: 20px;
+}
+  .event-card .card-body .isth-event-btn {
+    margin: 24px -16px 0;
+    padding-top: 24px;
+  }
+  .event-list-card .card-body button, .event-list-card.event-card-2 .card-body button, .event-list-card.event-card-3 .card-body button, .event-list-card.event-card-4 .card-body button {
+    font-size: 14px;
+    padding: 7px 16px;
+    max-width: 260px;
+  }
+  .event-card .card-body button img, .event-list-card button img {
+    width: 16px;
+  }
+  .event-list-card button {
+    max-width: 260px;
+    padding: 7px 15px;
+    font-size: 14px;
+    width:100%;
+  }
+  .oral-communication-inset h3, .scientific-development-inset h3 {
+    font-size: 32px;
+  }
+  .oral-communication-box {
+    padding-right: 30px;
+  }
+  .session-details p {
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
+  .session-details .session-venue p {
+    font-weight: 400;
+  }
+  .scientific-development-inset .oral-communication-box {
+    margin: 0;
+    padding-right: 19px;
+  }
+  .scientific-development {
+    margin-bottom: 32px;
+  }
+  .event-details-view-inset > h3 {
+    margin: 41px 0 0;
+    font-size: 32px;
+    line-height: normal;
+  }
+  .event-details-agenda {
+    margin: 56px 0 12px;
+  }
+  .event-details-agenda-speakers {
+    padding: 0 10px 0 60px;
+  }
+  .event-details-agenda-details p{
+    font-size: 13px;
+  }
+  .event-details-agenda-details p, #event-details-data-1 .event-details-agenda-details p {
+    padding-right: 10px;
+  }
+  .event-details-agenda-speakers .event-agenda-speaker {
+    max-width: 245px;
+    padding-right: 25px;
+  }
+  .event-details-view-inset .event-agenda-list {
+    padding: 14px 16px;
+    gap: 50px;
+  }
+  .event-details-view-inset .event-agenda-list .agenda-btn {
+    padding-left: 24px;
+  }
+  .event-details-view-inset .agenda-video {
+    margin: 72px 0;
+  }
+  .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+    padding: 0 103px 0 40px;
+    background-size: 305px;
+  background-position: -50px center;
+  }
+  .agenda-video-box .agenda-video-details .symposium-agenda h3 {
+    font-size: 24px;
+  }
+  .speaker-videos .speaker-videos-list .speaker-videos-text h5 {
+    font-size: 18px;
+  }
+  .speaker-videos .speaker-videos-list .speaker-videos-text {
+    max-width: 365px;
+  }
+  .event-details-view-inset .speaker-videos .speaker-videos-list {
+    margin: 0px 0 48px;
+  }
+  .isth-agenda-modal .modal-dialog {
+    max-width: 76%;
+  }
+  .event-details-view-inset .event-agenda-list > div p {
+    font-size: 16px;
+    max-width: 210px;
+  }
+  .event-details-agenda-speakers .event-agenda-speaker p {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+.event-card .card-body > div div {
+  padding-right: 0px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset img {
+    max-height: 340px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list .speaker-videos-text {
+    max-width: 305px;
+}
+.agenda-video-box .agenda-video-img .video-agenda-play img {
+  max-width: 48px;
+}
+.speaker-videos .speaker-videos-list .play-icon img, .speaker-videos .speaker-videos-list .play-icon {
+  max-width: 48px;
+}
+.speaker-videos .speaker-videos-list .speaker-videos-text {
+  padding: 8px 16px;
+}
+#event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+  padding: 0 67px 0 40px;
+}
+.oral-communication-box {
+    padding-right: 15px;
+}
+.event-card .card-body>div div {
+  gap: 12px;
+}
+.isth-banner-section:after {
+  background: linear-gradient(135deg, #00a993 0%, #c7ea46 4%, #f3942d 8%, #e94362 12%, rgb(255 255 255 / 25%) 16%, rgb(255 255 255 / 0%) 100%);
+}
+.modal .video-btn-play {
+  width: 48px;
+  height: 48px;
+}
+}
+
+@media only screen and (max-width: 1199px) {
+
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset img {
+    max-height: 290px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset {
+    height: 100%;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list .play-icon {
+    top: 50%;
+}
+}
+@media only screen and (min-width: 1209px) and (max-width: 1399px) {
+.event-details-agenda-details:after {
+  background-size: 3.7px!important;
+}
+#event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda{
+  padding: 0 83px 0 40px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .isth-banner-section-left h2 {
+    line-height: 36px;
+    font-size: 24px;
+}
+.isth-banner-section-left h2 span {
+  font-size: 24px;
+}
+.isth-banner-section-left h3 span, .isth-banner-section-left h3 {
+  font-size: 16px;
+}
+.isth-banner-section-left h3.add-space {
+  margin-top: 8px;
+}
+.isth-banner-section-left img {
+  max-width: 80px;
+  margin-bottom: 15px;
+}
+.event-card .card-header {
+  padding: 10px 12px;
+  min-height: 130px;
+}
+.event-card .card-header h6 {
+  font-size: 13px;
+}
+.event-card .card-body {
+  padding: 18px 10px 18px;
+}
+.event-card .card-body > div div {
+  gap: 12px;
+}
+.event-card .card-body > div div img {
+  width: 18px;
+}
+.event-card .card-body > div p {
+  font-size: 13px;
+}
+.event-card .card-body .isth-event-btn {
+  margin: 24px -10px 0;
+}
+.event-list-card .card-body button, .event-list-card.event-card-2 .card-body button, .event-list-card.event-card-3 .card-body button, .event-list-card.event-card-4 .card-body button {
+  font-size: 12px;
+  max-width: 200px;
+}
+.event-list-card button {
+  max-width: 200px;
+  padding: 7px 7px;
+  font-size: 12px;
+}
+.event-card .card-body button img, .event-list-card button img {
+  margin-left: 6px;
+}
+.event-card .card-body button img, .event-list-card button img {
+  width: 14px;
+}
+.isth-event-list {
+  margin: 0 0 70px;
+}
+.oral-communication-inset h3, .scientific-development-inset h3 {
+  font-size: 28px;
+}
+.oral-communication-box {
+  padding-right: 0px;
+}
+.session-venue > .d-flex {
+  gap: 15px;
+  flex-direction: column;
+  align-items: flex-start!important;
+}
+.session-venue .session-location.d-flex {
+  flex-direction: row;
+  margin-top: 12px;
+}
+.event-details-view-inset .event-agenda-list {
+  gap: 20px;
+}
+.event-details-view-inset .event-agenda-list > div {
+  gap: 10px;
+}
+.event-details-view-inset .event-agenda-list > div p {
+  font-size: 14px;
+  max-width: 170px;
+}
+.event-details-view-inset .event-agenda-list .agenda-btn a {
+  font-size: 14px;
+
+}
+.agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+  padding: 0 43px 0 20px;
+}
+.agenda-video-box .agenda-video-details .symposium-agenda h3 {
+  font-size: 21px;
+}
+.speaker-videos .speaker-videos-list {
+  padding: 10px;
+}
+.speaker-videos .speaker-videos-list .speaker-videos-text {
+  max-width: 100%;
+  position: static;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 12px 4px;
+  background: transparent;
+}
+.speaker-videos .speaker-videos-list .speaker-videos-text h5 {
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+.speaker-videos .speaker-videos-list .play-icon img {
+  max-width: 40px;
+}
+.speaker-videos .speaker-videos-list .play-icon {
+  top: 40%;
+  width:40px;
+}
+
+.agenda-video-box .agenda-video-img .agenda-video-viewer {
+  text-align: right;
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+.event-details-view-inset .agenda-video-img img {
+  width: 90%;
+}
+#event-details-data-1 .event-details-view-inset .agenda-video, #event-details-data-2 .event-details-view-inset .agenda-video, #event-details-data-3 .event-details-view-inset .agenda-video {
+  margin: 70px 0 64px;
+}
+
+.event-details-view-inset > h3 {
+  font-size: 26px;
+}
+.event-details-agenda-speakers .d-flex {
+  flex-wrap: wrap;
+}
+
+.event-details-agenda-speakers .d-flex .event-agenda-speaker {
+  padding: 0 0 20px;
+  width: 40%;
+}
+.event-details-agenda-speakers {
+  padding: 0 10px 0 20px;
+}
+.event-details-agenda-details p {
+  font-size: 12px;
+}
+.promotion-page.isth25 {
+  padding: 22px 10px 14px;
+}
+.event-details-collapse {
+  padding-top: 28px;
+}
+
+.event-details-view-inset .event-agenda-list .agenda-btn {
+  padding-left: 10px;
+}
+.event-details-view-inset .event-agenda-list {
+  padding: 12px 8px;
+}
+.event-details-view-inset .event-agenda-list .agenda-btn a {
+  padding: 10px 13px;
+}
+.agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+  min-height: 290px;
+}
+#event-details-data-3 .event-details-view::before {
+  right: 88px;
+}
+.event-details-view::before {
+  left: 80px;
+  top: -20px;
+}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .event-details-view-inset .event-agenda-list > div p {
+    font-size: 11px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:first-child .speaker-videos-list-inset {
+    height: auto;
+    box-shadow: none;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child h5.symposium-agenda-heading {
+    padding-top: 0px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset {
+    display: block;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-text {
+    position: static;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset img {
+    max-height: 170px;
+    margin-left: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list .speaker-videos-text h5 {
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list .play-icon {
+    top: 85px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset {
+    background-size: 210px;
+}
+.speaker-videos.symposium-nuwiq .d-flex {
+    gap: 25px;
+}
+.isth-event-list .symposium-nuwiq .col {
+    flex: 0 0 48%;
+}
+#event-details-data-2 .event-details-view::before {
+  left: 20.5%;
+}
+.isth-event-list .col:first-child + .event-details-collapse {
+  order: 3;
+}
+.isth-event-list .col:nth-child(3) + .event-details-collapse {
+  order: 5;
+}
+.isth-event-list .event-details-collapse {
+ order:unset;
+}
+.event-details-view-inset .event-agenda-list .agenda-btn a {
+  font-size: 12px;
+}
+.event-details-view-inset .event-agenda-list {
+  gap: 10px;
+}
+  .oral-communication-box {
+    flex-direction: column;
+  }
+  .oral-communication-inset h3, .scientific-development-inset h3 {
+    font-size: 25px;
+}
+.isth-event-list .col {
+  flex: 0 0 50%;
+}
+.isth-event-list .justify-content-md-between {
+  gap: 40px 0;
+}
+.isth-banner-section-inset .row .col-md-5, .isth-banner-section-inset .row .col-md-7 {
+  width: 100%;
+}
+#event-details-data-1 .event-details-view::before {
+  left: 73%;
+}
+
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .isth-event-list .justify-content-md-between {
+    gap: 0px 0;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child h5.symposium-agenda-heading {
+    padding-top: 0;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-text {
+    position: static;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset {
+    display: block;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset img {
+    max-height: 180px;
+    margin-left: auto;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list:last-child .speaker-videos-list-inset {
+    background-size: 220px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list .play-icon {
+    top: 90px;
+}
+.speaker-videos.symposium-nuwiq .d-flex {
+    gap: 48px;
+}
+.speaker-videos.symposium-nuwiq .speaker-videos-list .speaker-videos-text h5 {
+    font-size: 15px;
+}
+#event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda {
+  padding: 0 20px;
+}
+.event-details-view-inset .agenda-video .agenda-video-box {
+  box-shadow: none;
+  background: transparent;
+}
+.isth-banner-section-left img {
+	margin-bottom: 25px;
+}
+.event-list-card button {
+  max-width: 248px;
+  font-size: 14px;
+  padding: 7px 10px;
+}
+.promotion-page.isth25 {
+	padding: 12px 0;
+}
+.isth-banner-section-inset {
+	padding: 15px 10px 10px;
+  background: #222A37;
+}
+.isth-banner-section-inset:before {
+	content:"";
+  background:#222A37 url(/images/banner-bg-circle-mobile.png) no-repeat;
+  background-size: 190px;
+        position: absolute;
+        filter: blur(50px);
+        width: 100%;
+        height: 190px;
+        z-index: -1;
+        background-position: center;
+}
+.isth-banner-section-left {
+	padding: 12px 0px 40px 0px;
+	text-align: center;
+}
+.isth-banner-section {
+	margin-bottom: 41px;
+}
+.isth-event-list .col {
+	max-width: 100%;
+	flex: 0 0 100%;
+}
+.isth-event-list .event-list-card {
+	width: calc(100% - 64px);
+	margin: 0 auto 80px;
+  height: auto;
+}
+
+.event-list-card .card-body button, .event-list-card.event-card-2 .card-body button, .event-list-card.event-card-3 .card-body button, .event-list-card.event-card-4 .card-body button {
+	max-width: 248px;
+  font-size: 14px;
+  align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.event-card .card-body {
+	min-height: 284px;
+}
+.isth-event-list .col:last-child .event-list-card {
+	margin-bottom: 0;
+}
+.isth-event-list {
+	margin: 0 0 55px;
+}
+.oral-communication, .scientific-development {
+	padding: 24px 6px;
+}
+.oral-communication-inset h3, .scientific-development-inset h3 {
+	font-size: 20px;
+	text-align: center;
+}
+.oral-communication-card h6 {
+	font-size: 16px;
+	text-align: center;
+  letter-spacing: 0px;
+}
+.oral-communication-card p {
+	text-align: center;
+	margin: 0;
+  font-weight: 600;
+}
+.oral-communication-box {
+	padding-right: 0px;
+	flex-direction: column;
+	justify-content: center;
+}
+.oral-communication-box .speaker-img {
+	margin: 0 auto;
+}
+.oral-communication-box .session-details {
+	text-align: center;
+}
+.session-venue {
+	margin: 20px auto 0;
+	max-width: 230px;
+	text-align: left;
+}
+.session-venue > .d-flex {
+	gap: 12px;
+	flex-direction: column;
+	align-items: flex-start !important;
+}
+.session-venue .session-location.d-flex {
+	flex-direction: row;
+}
+
+.session-details p {
+	letter-spacing: 0.4px;
+	margin: 0 0 7px;
+	padding: 0px 10px;
+}
+.session-details .session-venue p {
+	padding: 0 0;
+}
+.isth_promo_img {
+	margin: 40px 0;
+}
+
+.isth_promo_img img {
+	margin: 0px -12px;
+	width: calc(100% + 24px);
+}
+.isth25 .disclaimer-text p {
+	font-size: 10px;
+	letter-spacing: 0.4px;
+}
+.scientific-development {
+	margin-bottom: 28px;
+}
+.isth-event-list .event-details-collapse {
+	order: unset;
+	margin-top: -80px;
+}
+.event-details-view-inset {
+	padding: 16px 10px 10px;
+  margin-bottom: 80px;
+}
+.event-details-view-inset img.close-btn {
+	right: 10px;
+	top: 16px;
+	width: 16px;
+}
+.event-details-view-inset > h3 {
+	font-size: 19px;
+	letter-spacing: 0.76px;
+}
+.event-details-agenda {
+	margin: 32px 0 12px;
+  padding: 10px;
+}
+.event-details-agenda-inset {
+	padding: 12px;
+}
+.event-details-agenda-details h3 {
+	margin: 0 0 12px;
+	font-size: 20px;
+	text-align: center;
+}
+.event-details-agenda-details p, #event-details-data-1 .event-details-agenda-details p {
+	padding: 0 0 24px;
+	font-size: 15px;
+	text-align: center;
+}
+.event-details-agenda-speakers {
+	padding: 0 10px;
+}
+.event-details-agenda-speakers > .d-flex {
+	flex-direction: column;
+	text-align: center;
+}
+.event-details-agenda-speakers .event-agenda-speaker {
+	max-width: 100%;
+	padding-right: 0;
+	margin-bottom: 32px;
+}
+.event-details-agenda-speakers .event-agenda-speaker:last-child {
+	margin-bottom: 10px;
+}
+.event-details-agenda-speakers .event-agenda-speaker p {
+	font-size: 16px;
+}
+.event-details-view::before {
+	left: 0;
+	right: 0;
+	width: 36px;
+	background-size: 36px;
+	height: 36px;
+	top: -20px;
+  margin:0 auto;
+}
+.event-details-view-inset .event-agenda-list {
+	padding: 24px 24px;
+	gap: 24px;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.event-details-view-inset .event-agenda-list > div p {
+	font-size: 14px;
+	font-weight: 400;
+}
+.event-details-view-inset .event-agenda-list > div > img {
+	width: 20px;
+}
+.event-details-view-inset .event-agenda-list .agenda-btn a {
+	font-size: 14px;
+	padding: 8px 16px;
+	margin: 0 auto;
+}
+.event-details-view-inset .event-agenda-list .agenda-btn {
+	padding-left: 0;
+	margin-left: 0;
+	border-left: 0;
+	border-top: 1px dashed var(--white);
+	padding-top: 24px;
+	width: calc(100% + 48px);
+	margin-left: -24px;
+  margin-top:20px;
+}
+.event-details-view-inset .agenda-video {
+	margin: 48px 0;
+	padding: 10px;
+}
+.agenda-video-box .agenda-video-details {
+  order: 2;
+}
+.agenda-video-box .agenda-video-img {
+  order: 1;
+}
+.agenda-video-box .agenda-video-img .video-agenda-play {
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 40px;
+	height: auto;
+}
+.agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+	padding: 0 0px 0 0px;
+	text-align: center;
+}
+.agenda-video-box .agenda-video-details .symposium-agenda h3.symposium-agenda-heading {
+	margin-bottom: 6px;
+	font-size: 16px;
+}
+.agenda-video-box .agenda-video-details .symposium-agenda h3 {
+	font-size: 16px;
+	margin-bottom: 12px;
+}
+.agenda-video-viewer {
+	width: 100%;
+	border-radius: 4px;
+	background: #212938;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.44);
+	margin-bottom: 12px;
+  position: relative;
+}
+.event-details-view .disclamer-text p {
+	font-size: 10px;
+	text-align: center;
+}
+#event-details-data-1 .event-details-view-inset .agenda-video, #event-details-data-2 .event-details-view-inset .agenda-video, #event-details-data-3 .event-details-view-inset .agenda-video {
+	margin: 48px 0 32px;
+}
+#event-details-data-3 .event-details-view-inset {
+	margin-bottom: 0;
+}
+.isth-agenda-modal .modal-dialog {
+	max-width: 96%;
+}
+ .ISTH-agenda-modal-body .one_source_video {
+	height: 200px !important;
+	min-height: 185px;
+} 
+.session-venue .session-location {
+  margin: 12px 0 0;
+}
+.event-details-agenda-details:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  background: url(/images/dotted-line-mobile1.svg) no-repeat;
+  height:4px;
+  width: 100%;
+  top: auto;
+  left:0;
+  bottom:0;
+  background-position: center;
+}
+#event-details-data-1 .event-details-agenda-details:after {
+  background: url(/images/dotted-line-mobile2.svg) no-repeat;
+  background-position: center;
+}
+#event-details-data-2 .event-details-agenda-details:after {
+  background: url(/images/dotted-line-mobile3.svg) no-repeat;
+  background-position: center;
+}
+#event-details-data-3 .event-details-agenda-details:after {
+  background: url(/images/dotted-line-mobile4.svg) no-repeat;
+  background-position: center;
+}
+.event-details-agenda-details {
+  position: relative;
+  margin-bottom: 24px;
+}
+#event-details-data-2 .event-details-view::before, #event-details-data-1 .event-details-view::before, #event-details-data-3 .event-details-view::before {
+  left: 0;
+  right:0;
+}
+.agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-2 .agenda-video-box .agenda-video-details .symposium-agenda, #event-details-data-3 .agenda-video-box .agenda-video-details .symposium-agenda {
+  background: none;
+}
+.speaker-videos .d-flex {
+  flex-direction: column;
+  gap: 0;
+}
+.speaker-videos .speaker-videos-list {
+  padding: 10px;
+}
+.speaker-videos .speaker-videos-list .speaker-videos-text {
+  max-width: 100%;
+  position: static;
+  text-align: center;
+  font-size: 16px;
+  padding: 12px 12px 4px;
+  background: transparent;
+}
+.speaker-videos .speaker-videos-list .speaker-videos-text h5 {
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+.speaker-videos .speaker-videos-list .play-icon img {
+  max-width: 40px;
+}
+.speaker-videos .speaker-videos-list .play-icon {
+  top: 40%;
+  width:40px;
+}
+.agenda-video-viewer > img {
+  display: none;
+}
+
+.agenda-video-viewer .mobile_viewer {
+  display: block!important;
+  text-align: right;
+}
+#event-details-data-0 .agenda-video-viewer .mobile_viewer {
+  background: url(/images/video-agenda-circle-green-mobile.png) no-repeat;
+}
+#event-details-data-1 .agenda-video-viewer .mobile_viewer {
+  background: url(/images/video-agenda-circle-orange-mobile.png) no-repeat;
+}
+#event-details-data-2 .agenda-video-viewer .mobile_viewer {
+  background: url(/images/video-agenda-circle-pink-mobile.png) no-repeat;
+}
+#event-details-data-3 .agenda-video-viewer .mobile_viewer {
+  background: url(/images/video-agenda-circle-yellow-mobile.png) no-repeat;
+}
+.agenda-video-viewer .mobile_viewer img{
+width:auto;
+max-width: 170px;
+}
+.event-card .card-header h6 {
+  font-size: 15px;
+  letter-spacing: 0.7px;
+}
+.event-details-agenda-speakers .event-agenda-speaker p br {
+  display: none;
+}
+.scientific-development-inset .oral-communication-box {
+  padding-right: 0px;
+}
+.event-card .card-body > div p {
+  font-size: 14px;
+}
+.event-card .card-body {
+  padding: 24px 16px 24px;
+}
+.event-card .card-body > div div {
+	gap: 14px;
+}
+.event-card .card-body > div div img {
+	width: 20px;
+	max-height: 20px;
+	margin-top: 3px;
+}
+.oral-communication-inset h3, .scientific-development-inset h3 {
+	margin: 0 0 60px;
+}
+.modal .ISTH-agenda-modal-body .video-btn-play {
+  width: 40px;
+  height: 40px;
+}
+.isth-agenda-modal .modal-body {
+  padding: 10px;
+}
+/* .isth-event-list #event-details-data-3.event-details-collapse {
+  margin-top: 0px;
+} */
+#event-details-data-0 .event-details-view-inset .event-agenda-list > div p span, #event-details-data-1 .event-details-view-inset .event-agenda-list > div p span, #event-details-data-2 .event-details-view-inset .event-agenda-list > div p span, #event-details-data-3 .event-details-view-inset .event-agenda-list > div p span{
+  color: #fff;
+}
+.isth-agenda-modal .modal-dialog .modal-content .modal-header .modal-title {
+  font-size: 12px;
+  text-align: left;
+  width: 71%;
+}
+.event-details-view-inset .event-agenda-list > div:nth-child(3) {
+  align-items: flex-start;
+}
+.event-details-view-inset .event-agenda-list > div:nth-child(3) img {
+  margin-top: 2px;
+}
+#event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda {
+  padding: 0 17px;
+}
+.event-card-3 .event-card .card-header h6 {
+  padding-right: 20px;
+}
+}
+
+@media only screen and (min-width: 390px) and (max-width:420px){
+.event-card-2 .event-card .card-header h6 {
+    padding-right: 40px;
+}
+}
+@media only screen and (max-width: 399px) {
+  #event-details-data-1 .agenda-video-box .agenda-video-details .symposium-agenda {
+    padding: 0 8px;
+}
+.event-card-3 .event-card .card-header h6 {
+  padding-right: 0px;
+}
+}

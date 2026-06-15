@@ -1,0 +1,205 @@
+name: Frontend CI/CD
+
+on:
+push:
+branches:
+- main
+
+permissions:
+contents: read
+
+jobs:
+semgrep:
+name: SAST - Scan
+runs-on: ubuntu-latest
+continue-on-error: true
+permissions:
+contents: read
+
+
+steps:
+  - name: Checkout Code
+    uses: actions/checkout@v4
+
+  - name: Setup Python
+    uses: actions/setup-python@v5
+    with:
+      python-version: "3.12"
+
+  - name: Install Latest Semgrep
+    run: |
+      python -m pip install --upgrade pip
+      pip install --upgrade semgrep
+
+  - name: Verify Semgrep Version
+    run: semgrep --version
+
+  - name: Run Semgrep
+    continue-on-error: true
+    run: |
+      semgrep scan \
+        --config p/security-audit \
+        .
+
+
+gitleaks:
+name: Secrets Detection
+runs-on: ubuntu-latest
+permissions:
+contents: read
+
+
+steps:
+  - name: Checkout Code
+    uses: actions/checkout@v4
+
+  - name: Run Gitleaks
+    uses: gitleaks/gitleaks-action@v2
+
+
+dependency-check:
+name: SCA Check
+runs-on: ubuntu-latest
+continue-on-error: true
+permissions:
+contents: read
+
+
+steps:
+  - name: Checkout Code
+    uses: actions/checkout@v4
+
+  - name: Run Dependency Check
+    uses: dependency-check/Dependency-Check_Action@main
+    with:
+      project: "OneSources"
+      path: "."
+      format: "HTML"
+
+  - name: Upload Dependency Report
+    uses: actions/upload-artifact@v4
+    with:
+      name: dependency-check-report
+      path: reports
+      retention-days: 14
+
+
+build:
+name: Build React App
+runs-on: ubuntu-latest
+needs:
+- semgrep
+- gitleaks
+- dependency-check
+permissions:
+contents: read
+
+
+steps:
+  - name: Checkout Code
+    uses: actions/checkout@v4
+
+  - name: Create .env File
+    run: echo "${{ secrets.ONESOURCES_ENV }}" > .env
+
+  - name: Setup Node.js
+    uses: actions/setup-node@v4
+    with:
+      node-version: "22"
+      cache: npm
+
+  - name: Install Dependencies
+    run: npm ci
+
+  - name: Build Application
+    run: npm run build
+
+  - name: Verify Build Folder
+    run: ls -lah dist
+
+  - name: Upload Build Artifact
+    uses: actions/upload-artifact@v4
+    with:
+      name: dist
+      path: dist
+      retention-days: 7
+
+
+deploy:
+name: Deploy Static Site
+runs-on: ubuntu-latest
+needs:
+- build
+permissions:
+contents: read
+
+
+steps:
+  - name: Download Build Artifact
+    uses: actions/download-artifact@v4
+    with:
+      name: dist
+      path: dist
+
+  - name: Prepare Deployment Directory
+    uses: appleboy/ssh-action@v1.2.2
+    with:
+      host: ${{ secrets.EC2_HOST }}
+      username: ${{ secrets.EC2_USER }}
+      key: ${{ secrets.EC2_SSH_KEY }}
+      script: |
+        sudo mkdir -p /var/www/onesources/dist
+        sudo chown -R ubuntu:ubuntu /var/www/onesources
+
+  - name: Copy Build Files
+    uses: appleboy/scp-action@v1.0.0
+    with:
+      host: ${{ secrets.EC2_HOST }}
+      username: ${{ secrets.EC2_USER }}
+      key: ${{ secrets.EC2_SSH_KEY }}
+      source: "dist/*"
+      target: "/var/www/onesources"
+
+  - name: Verify Deployment
+    uses: appleboy/ssh-action@v1.2.2
+    with:
+      host: ${{ secrets.EC2_HOST }}
+      username: ${{ secrets.EC2_USER }}
+      key: ${{ secrets.EC2_SSH_KEY }}
+      script: |
+        ls -lah /var/www/onesources/dist
+
+  - name: Reload Nginx
+    uses: appleboy/ssh-action@v1.2.2
+    with:
+      host: ${{ secrets.EC2_HOST }}
+      username: ${{ secrets.EC2_USER }}
+      key: ${{ secrets.EC2_SSH_KEY }}
+      script: |
+        sudo nginx -t
+        sudo systemctl reload nginx
+
+
+zap:
+name: DAST Scan
+runs-on: ubuntu-latest
+needs:
+- deploy
+continue-on-error: true
+permissions:
+contents: read
+
+
+steps:
+  - name: Run ZAP Baseline Scan
+    run: |
+      docker run --rm \
+        ghcr.io/zaproxy/zaproxy:stable \
+        zap-baseline.py \
+        -t https://onesources.shinedezign.pro \
+        -m 5 \
+        -I
+
+  - name: ZAP Scan Completed
+    run: echo "ZAP scan finished successfully"
+

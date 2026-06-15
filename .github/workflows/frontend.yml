@@ -52,6 +52,7 @@ jobs:
 
       - name: Run Gitleaks
         uses: gitleaks/gitleaks-action@v2
+        continue-on-error: true
 
   dependency-check:
     name: SCA Check

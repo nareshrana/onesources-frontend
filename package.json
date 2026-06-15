@@ -40,7 +40,7 @@
   "scripts": {
     "start": "vite",
     "dev": "vite",
-    "build": "vite build && node postbuild.js",
+    "build": "vite build",
     "preview": "vite preview",
     "serve": "vite preview",
     "live": "serve -l 3005 -s dist",
